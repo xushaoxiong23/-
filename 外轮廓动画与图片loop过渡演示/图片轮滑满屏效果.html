@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+    html,
+    body {
+        height: 100%;
+    }
+    
+    .container {
+        /* position: relative; */
+        height: 100%;
+    }
+    
+    .box {
+        width: 100%;
+        height: 50px;
+        /* position: absolute; */
+        background: url(IDR_PROFILE_AVATAR_13@2x.png) repeat-x;
+    }
+    
+    .box1 {
+        width: 76px;
+        height: 100%;
+        /* position: absolute; */
+        background: url(IDR_PROFILE_AVATAR_13@2x.png) repeat-y;
+    }
+    
+    .box {
+        animation: looppic 0.2s linear infinite;
+    }
+    
+    @keyframes looppic {
+        from {
+            background-position: 0px 0px;
+        }
+        to {
+            /*根据图片的大小*/
+            background-position: 76px 0px;
+        }
+    }
+    
+    .box1 {
+        animation: looppi 0.2s linear infinite;
+    }
+    
+    @keyframes looppi {
+        from {
+            background-position: 0px 0px;
+        }
+        to {
+            /*根据图片的大小*/
+            background-position: 0px -72px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box1"></div>
+    </div>
+</body>
+
+</html>
